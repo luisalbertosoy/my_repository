@@ -1,6 +1,68 @@
+/** fuentes primero **/
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font: normal 10px Verdana, Arial, sans-serif;
+    font-size: 16px;
+}
+
+/** header **/
+
+.header-index {
+    display:flex;
+    height: 64px;
+    justify-content: space-between;
+    margin: 0px 16px;
+    align-items: center;   
+}
+
+.header-index a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 32px;
+    color: black;
+}
+
+.nav-container {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 32px;
+    color: black;
+}
+
+.header-bag {
+
+}
+
+.header-bag a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 32px;
+    color: black;
+}
+
+/** herospace **/
+
+.herospace-index {
+    width: 100%;
+    height: 710px;
+    background-color: blue;
+    background-image: url("./../assets/img/herospace_index.webp");
+}   
