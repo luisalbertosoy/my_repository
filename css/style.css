@@ -147,29 +147,33 @@ body {
 
 .trend-info {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "season year . link"
+    ;
     padding: 0 16px;
     gap: 16px;
 }
 
 .season {
-    width: 24%;
+    grid-area: season;
 }
 
 .year {
-    width: 24%; 
     display: flex;
     justify-content: flex-end;
+    grid-area: year;
 }
 
 .trend-products a {
-    width: 51%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     color: #000000;
     text-decoration: none;
     line-height: 32px;
+    grid-area: link;
 }
 
 .cards {
