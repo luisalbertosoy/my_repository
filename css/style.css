@@ -35,6 +35,11 @@ body {
     font-size: 16px;
 }
 
+.font-90 {
+    font-size: 90px;
+    line-height: 90px;
+}
+
 .font-60 {
     font-size: 60px;
     line-height: 64px;
@@ -45,7 +50,7 @@ body {
     line-height: 32px;
 }
 
-/** header **/
+/** Main Header **/
 
 .header-index {
     display:flex;
@@ -55,6 +60,7 @@ body {
     padding: 0px 16px;
     align-items: center;
     position: fixed;
+    z-index: 50;
 }
 
 .header-index a {
@@ -93,12 +99,12 @@ body {
     color: black;
 }
 
-/** herospace **/
+/** Herospace **/
 
 .herospace-index {
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: #000000;
     background-image: url("./../assets/img/herospace_index.webp");
     background-position: center;
     background-size: cover;
@@ -108,5 +114,81 @@ body {
     color: white;
     padding-left: 10%;
     padding-bottom: 10%;
+    position: sticky;
+    margin-top: 0;
+    z-index: 10;
 }   
 
+.menu-bg {
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff5d;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/** Main **/
+
+.main-container {
+    z-index: 0;
+}
+
+/** Trend Products **/
+
+.trend-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 136px;
+    gap: 16px;
+}
+
+.trend-info {
+    width: 100%;
+    display: flex;
+    padding: 0 16px;
+    gap: 16px;
+}
+
+.season {
+    width: 24%;
+}
+
+.year {
+    width: 24%; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.trend-products a {
+    width: 51%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #000000;
+    text-decoration: none;
+    line-height: 32px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    padding: 0 16px;
+    gap: 16px;
+}
+
+.trend-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trend-card img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
