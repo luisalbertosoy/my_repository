@@ -35,6 +35,13 @@ body {
     font-size: 16px;
 }
 
+/** Font System **/
+
+.font-188 {
+    font-size: 188px;
+    line-height: 152px;
+}
+
 .font-90 {
     font-size: 90px;
     line-height: 90px;
@@ -48,6 +55,11 @@ body {
 .font-28 {
     font-size: 28px;
     line-height: 32px;
+}
+
+.font-20 {
+    font-size: 20px;
+    line-height: 24px;
 }
 
 /** Main Header **/
@@ -196,3 +208,81 @@ body {
     border-radius: 4px;
     border: 1px solid #000;
 }
+
+/** Archive Section **/
+
+.archive-container {
+    width: 100%;
+    height: 1328px;
+    background-color: #ECE870;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 16px;
+    padding: 0px 16px;
+    grid-template-areas:
+    "title title title title title title title title . brand brand brand"
+    "title title title title title title title title . brand brand brand"
+    ". . . . . . . . . . . ."
+    ". . season season . . version version . . . ."
+    "subtitle subtitle . . tagline tagline collection collection collection collection . ."
+    "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+    "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+    "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+    "subtitle subtitle info info info info thumb thumb thumb thumb . ."
+    "subtitle subtitle info info info info thumb thumb thumb thumb . ."
+    "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
+    "subtitle subtitle . . . . . . . . . ."
+    ;
+}
+
+.title-archive {
+    grid-area: title;
+}
+
+.brand-archive {
+    grid-area: brand;
+}
+
+.season-archive {
+    grid-area: season;
+}
+
+.version-archive {
+    grid-area: version;
+}
+
+.subtitle-archive {
+    grid-area: subtitle;
+    transform: rotate(-90deg);
+}
+
+.tagline-archive {
+    grid-area: tagline;
+}
+
+.collection-archive {
+    grid-area: collection;
+}
+
+.archive-container img {
+    grid-area: thumb;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.text-archive {
+    grid: info;
+}
+
+.cta-archive {
+    grid-area: cta;
+}
+
+.cta-archive a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+}
+
