@@ -170,6 +170,52 @@ body {
     color: black;
 }
 
+/** Subnav **/
+
+.sub-container {
+    width: auto;
+    position: fixed;
+    bottom: 16px;
+    left: 40%;
+    z-index: 100;
+}
+
+.sub-container ul {
+    width: auto;
+    display: flex;
+    justify-items: center;
+    gap: 32px;
+    padding: 16px 24px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    background: rgba(195, 210, 232, 0.60);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03), 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.sub-container ul li {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    list-style: none;
+}
+
+.sub-container ul li a {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.submenu-active {
+    width: 12px;
+    height: 12px;
+    background-color: #1D79FF;
+    border-radius: 10px;
+}
+
+
 /** Herospace **/
 
 .herospace-index {
@@ -465,7 +511,7 @@ body {
     "ten ten quote quote quote quote . . . . aphn aphn"
     ". . . . . . . . . . aphn aphn"
     ". . . . . . . . . . . ."
-    "menu1 menu1 menu2 menu2 menu3 menu3 . nslr nslr nslr . ."
+    "menu1 menu1 menu2 menu2 menu3 menu3 . . nslr nslr nslr nslr"
     "copyr copyr copyr copyr . . . . privacy privacy privacy privacy"
     ;
 }
@@ -525,6 +571,7 @@ body {
 }
 
 .newsletter-f {
+    width: 238px;
     grid-area: nslr;
     display: flex;
     flex-direction: column;
@@ -538,6 +585,30 @@ body {
 
 .newsletter-f div {
     display: flex;
+    justify-content: space-between;
+}
+
+input[type=text] {
+    color: #000;
+    border: 0px solid #ffffff;
+}
+
+input[type=submit] {
+    color: #000;
+    font-size: 14;
+    line-height: 16px;
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+}
+
+::placeholder {
+    color: #A1A1A1;
+    border-style: none;
+}
+
+:focus {
+    border: 0px solid #ffffff;
+    border-radius: 0px;
 }
 
 .copyright {
