@@ -354,3 +354,16 @@ body {
     text-decoration: none;
 }
 
+/** Collection Tops Section **/
+
+.collection-tops {
+    width: 100%;
+}
+
+.tops-info {
+    width: 100%;
+    display: flex;
+    padding: 136px 16px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
