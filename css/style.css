@@ -88,6 +88,22 @@ body {
     background-color: #1A1B1D;
 }
 
+.bg-red {
+    background-color: #D84B35;
+}
+
+.bg-marine-blue {
+    background-color: #37526F;
+}
+
+.bg-green {
+    background-color: #017F71;
+}
+
+.bg-silver {
+    background-color: #C9CBC6;
+}
+
 /** Main Header **/
 
 .header-index {
@@ -334,6 +350,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .text-archive {
@@ -358,12 +375,59 @@ body {
 
 .collection-tops {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 136px 0px;
 }
 
 .tops-info {
     width: 100%;
     display: flex;
-    padding: 136px 16px;
+    padding: 0px 16px;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.tops-cards {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid #000;
+}
+
+.tops-card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tops-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.tops-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 16px;
+}
+
+.tops-card-alt {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 96px 0px;
+}
+
+.tops-card-alt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 4px 4px;
 }
