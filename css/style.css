@@ -62,6 +62,11 @@ body {
     line-height: 24px;
 }
 
+.font-14 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
 /** Color System **/
 
 .bg-aphnblue {
@@ -102,6 +107,18 @@ body {
 
 .bg-silver {
     background-color: #C9CBC6;
+}
+
+.clr-aphnblue {
+    color: #ECE870;
+}
+
+.clr-aphnyellow {
+    color: #1D79FF;
+}
+
+.clr-lightgray {
+    color: #F1F1F1;
 }
 
 /** Main Header **/
@@ -430,4 +447,115 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 0px 0px 4px 4px;
+}
+
+/** Footer **/
+
+.footer-index {
+    width: 100%;
+    height: 384px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 16px;
+    padding: 32px 16px;
+    background: var(--UI-Color-OFF-White, #FFF);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05) inset;
+    grid-template-areas:
+    "ten ten quote quote quote quote . . . . aphn aphn"
+    ". . . . . . . . . . aphn aphn"
+    ". . . . . . . . . . . ."
+    "menu1 menu1 menu2 menu2 menu3 menu3 . nslr nslr nslr . ."
+    "copyr copyr copyr copyr . . . . privacy privacy privacy privacy"
+    ;
+}
+
+.ten {
+    grid-area: ten;
+    display: flex;
+    align-items: flex-start;
+}
+
+.quote {
+    grid-area: quote;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-index img {
+    grid-area: aphn;
+    display: flex;
+    justify-self: end;
+    align-items: flex-end;
+}
+
+.menu-1 {
+    grid-area: menu1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-2 {
+    grid-area: menu2;
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-3 {
+    grid-area: menu3;
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-f {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-f li {
+    list-style: none;
+}
+
+.menu-f li a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.newsletter-f {
+    grid-area: nslr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newsletter-f p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.newsletter-f div {
+    display: flex;
+}
+
+.copyright {
+    grid-area: copyr;
+    display: flex;
+    align-items: flex-end;
+}
+
+.privacy {
+    grid-area: privacy;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.privacy a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
 }
