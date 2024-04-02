@@ -257,7 +257,7 @@ body {
 /** Main **/
 
 .main-container {
-    z-index: 
+    z-index: 0;
 }
 
 /** Trend Products **/
@@ -648,7 +648,7 @@ input[type=submit] {
     line-height: 16px,
 }
 
-/** HOME PAGE END **/
+/** 1. **//** HOME PAGE END **/
 
 
 /** 2. **//** SINGLE PRODUCT PAGE **/
