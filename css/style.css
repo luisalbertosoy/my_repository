@@ -5,22 +5,22 @@
     font-style: normal;
     font-weight: 400;
     src:
-      local("Open Sans"),
-      url("./../assets/fonts/NHaasGroteskDSPro-55Rg.woff2") format("woff2"),
-      url("./../assets/fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"),
-      url("./../assets/fonts/NHaasGroteskDSPro-55Rg.ttf") format("truetype");
-  }
+    local("Open Sans"),
+    url("./../assets/fonts/NHaasGroteskDSPro-55Rg.woff2") format("woff2"),
+    url("./../assets/fonts/NHaasGroteskDSPro-55Rg.woff") format("woff"),
+    url("./../assets/fonts/NHaasGroteskDSPro-55Rg.ttf") format("truetype");
+}
 
-  @font-face {
+@font-face {
     font-family: 'Neue Haas Grotesk';
     font-style: medium;
     font-weight: 600;
     src:
-      local("Open Sans"),
-      url("./../assets/fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"),
-      url("./../assets/fonts/NHaasGroteskDSPro-65Md.woff") format("woff"),
-      url("./../assets/fonts/NHaasGroteskDSPro-65Md.ttf") format("truetype");
-  }
+    local("Open Sans"),
+    url("./../assets/fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"),
+    url("./../assets/fonts/NHaasGroteskDSPro-65Md.woff") format("woff"),
+    url("./../assets/fonts/NHaasGroteskDSPro-65Md.ttf") format("truetype");
+}
 
 *{
     margin: 0;
@@ -635,4 +635,4 @@ input[type=submit] {
     color: #000;
 }
 
-/** HOME PAGE CSS END**/
+/** HOME PAGE CSS END **/
