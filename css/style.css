@@ -1,4 +1,4 @@
-/** fuentes primero **/
+/** Calling Fonts **/
 
 @font-face {
     font-family: 'Neue Haas Grotesk';
@@ -22,11 +22,15 @@
     url("./../assets/fonts/NHaasGroteskDSPro-65Md.ttf") format("truetype");
 }
 
+/** Reset Reset Reset **/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/** General Body **/
 
 body {
     font-family: 'Neue Haas Grotesk';
@@ -123,6 +127,8 @@ body {
     color: #F1F1F1;
 }
 
+/** 1. **//** HOME PAGE **/
+
 /** Main Header **/
 
 .header-index {
@@ -162,7 +168,7 @@ body {
 }
 
 .header-bag {
-
+    display: inline;
 }
 
 .header-bag a {
@@ -217,8 +223,6 @@ body {
     background-color: #1D79FF;
     border-radius: 10px;
 }
-
-/** HOME PAGE CSS BEGIN**/
 
 /** Herospace **/
 
@@ -279,22 +283,31 @@ body {
 
 .season {
     grid-area: season;
+    line-height: 80px;
 }
 
 .year {
+    grid-area: year;
     display: flex;
     justify-content: flex-end;
-    grid-area: year;
+    line-height: 80px;
 }
 
-.trend-products a {
+.btn-container {
+    grid-area: link;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     color: #000000;
     text-decoration: none;
     line-height: 32px;
-    grid-area: link;
+}
+
+.btn-container a {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 16px;
 }
 
 .cards {
@@ -354,20 +367,20 @@ body {
     grid-template-rows: repeat(12, 1fr);
     gap: 16px;
     padding: 0px 16px;
-    padding bottom: 136px;
+    padding-bottom: 136px;
     grid-template-areas:
-    "title title title title title title title title . brand brand brand"
-    "title title title title title title title title . brand brand brand"
-    ". . . . . . . . . . . ."
-    ". . season season . . version version version version . ."
-    "subtitle subtitle . . tagline tagline collection collection collection collection . ."
-    "subtitle subtitle . . . . thumb thumb thumb thumb . ."
-    "subtitle subtitle . . . . thumb thumb thumb thumb . ."
-    "subtitle subtitle . . . . thumb thumb thumb thumb . ."
-    "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
-    "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
-    "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
-    "subtitle subtitle . . . . . . . . . ."
+        "title title title title title title title title . brand brand brand"
+        "title title title title title title title title . brand brand brand"
+        ". . . . . . . . . . . ."
+        ". . season season . . version version version version . ."
+        "subtitle subtitle . . tagline tagline collection collection collection collection . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . . . . . . ."
     ;
 }
 
@@ -499,7 +512,7 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
-/** Footer **/
+/** Main Footer **/
 
 .footer-index {
     width: 100%;
@@ -629,10 +642,14 @@ input[type=submit] {
 }
 
 .privacy a {
+    color: #000000;
     text-decoration: none;
     font-size: 14px;
-    line-height: 16px;
-    color: #000;
+    line-height: 16px,
 }
 
-/** HOME PAGE CSS END **/
+/** HOME PAGE END **/
+
+
+/** 2. **//** SINGLE PRODUCT PAGE **/
+
