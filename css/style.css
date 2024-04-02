@@ -218,6 +218,7 @@ body {
     border-radius: 10px;
 }
 
+/** HOME PAGE CSS BEGIN**/
 
 /** Herospace **/
 
@@ -633,3 +634,5 @@ input[type=submit] {
     line-height: 16px;
     color: #000;
 }
+
+/** HOME PAGE CSS END**/
