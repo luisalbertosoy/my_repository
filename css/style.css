@@ -723,12 +723,12 @@ input[type=submit] {
 
 @media (max-width:768px) {
     .font-188 {
-        font-size: 90px;
-        line-height: 60px;
+        font-size: 80px;
+        line-height: 64px;
     }
     .font-90 {
         font-size: 48px;
-        line-height: 32px;
+        line-height: 24px;
     }
     .font-60 {
         font-size: 32px;
@@ -756,7 +756,7 @@ input[type=submit] {
     /** @ Trends Section **/
 
     .trend-products {
-        margin: 96px 0px;
+        margin: 80px 0px;
     }
     .cards {
         flex-direction: row;
@@ -800,19 +800,118 @@ input[type=submit] {
         -webkit-backdrop-filter: blur(8px);
     }
 
-    /** Main Header **/
+    /** @ Main Header **/
 
     .header-index {
         display:none;
     }
 
-    /** Herospace **/
+    /** @ Herospace **/
 
     .herospace-index {
+        height: calc(100vh - 8px);;
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 50%;
         gap: 8px;
     }
     
+    /** @ Archive Section **/
+
+    .archive-container {
+        height: 100vh;
+        background-color: #ECE870;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 16px;
+        padding: 16px 16px;
+        grid-template-areas:
+            "title title title title title title title title . brand brand brand"
+            "title title title title title title title title . brand brand brand"
+            ". . . . . . . . . . . ."
+            ". . season season . . version version version version . ."
+            "subtitle subtitle . . tagline tagline collection collection collection collection . ."
+            "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+            "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+            "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+            "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+            "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+            "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
+            "subtitle subtitle . . . . . . . . . ."
+        ;
+    }
+    
+    .title-archive {
+        grid-area: title;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .brand-archive {
+        grid-area: brand;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    .season-archive {
+        grid-area: season;
+    }
+    
+    .version-archive {
+        grid-area: version;
+        line-height: 72px;
+    }
+    
+    .subtitle-archive {
+        grid-area: subtitle;
+        line-height: 72px;
+        display:flex;
+        flex-direction: row;
+        /** Rotation */
+        writing-mode: vertical-lr;
+    }
+    
+    .tagline-archive {
+        grid-area: tagline;
+    }
+    
+    .collection-archive {
+        grid-area: collection;
+    }
+    
+    .archive-container img {
+        grid-area: thumb;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .text-archive {
+        grid-area: btxt;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .cta-archive {
+        grid-area: cta;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .cta-archive a {
+        display: inline-block;
+        color: #000000;
+        text-decoration: none;
+    }
 }
