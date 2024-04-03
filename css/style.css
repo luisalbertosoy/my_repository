@@ -721,4 +721,49 @@ input[type=submit] {
         font-size: 32px;
         line-height: 32px;
     }
+
+    /** @ Trends Section **/
+
+    .trend-products {
+        margin: 96px 0px;
+    }
+
+    .cards {
+        flex-direction: row;
+        column-gap: 16px;
+        row-gap: 32px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .trend-card {
+        width: calc(50% - 8px);
+    }
+
+    .product-name {
+        font-size: 14px;
+    }
+
+    /** @ Tops Section **/
+
+    .tops-cards {
+        row-gap: 32px;
+        column-gap: 0px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 0px solid #ffffff;
+    }
+    
+    .tops-card {
+        width: 50%;
+        border-top: 1px solid #000;
+    }
+    
+    .tops-card-alt {
+        width: 50%;
+        padding-top: 12%;
+        border-top: 1px solid #000;
+    }
 }
