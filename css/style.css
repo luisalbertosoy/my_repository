@@ -725,9 +725,13 @@ input[type=submit] {
 
     /** @ Subnav **/
 
+    .sub-container {
+        bottom: 32px;
+    }
+
     .sub-container ul {
         backdrop-filter: blur(0.625rem);
-        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(8px);
     }
 
     /** @ Trends Section **/
