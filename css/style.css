@@ -205,6 +205,7 @@ body {
     background: rgba(195, 210, 232, 0.60);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.03), 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(0.625rem);
+    background-blend-mode: overlay;
 }
 
 .sub-container ul li {
@@ -720,6 +721,13 @@ input[type=submit] {
     .font-60 {
         font-size: 32px;
         line-height: 32px;
+    }
+
+    /** @ Subnav **/
+
+    .sub-container ul {
+        backdrop-filter: blur(0.625rem);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     /** @ Trends Section **/
