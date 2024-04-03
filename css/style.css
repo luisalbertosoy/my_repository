@@ -753,6 +753,29 @@ input[type=submit] {
         -webkit-backdrop-filter: blur(8px);
     }
 
+    /** @ Header BG Blured **/
+
+    .menu-bg {
+        backdrop-filter: blur(0.625rem);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
+    /** @ Main Header **/
+
+    .header-index {
+        display:none;
+    }
+
+    /** @ Herospace **/
+
+    .herospace-index {
+        height: calc(100vh - 56px);
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 30%;
+        gap: 8px;
+    }
+    
     /** @ Trends Section **/
 
     .trend-products {
@@ -773,7 +796,116 @@ input[type=submit] {
         font-size: 13px;
     }
 
+    /** @ Archive Section **/
+
+    .archive-container {
+        height: 96vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        padding: 0px 16px 16px 16px;
+        grid-template-areas:
+            "title title title title"
+            ". season brand ."
+            "tagline tagline version version"
+            ". . collection collection"
+            "subtitle . thumb thumb"
+            "subtitle . thumb thumb"
+            "cta cta thumb thumb"
+        ;
+    }
+
+    .brand-archive {
+        grid-area: brand;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .season-archive {
+        grid-area: season;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .version-archive {
+        grid-area: version;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 56px;
+        line-height: 40px;
+    }
+    
+    .subtitle-archive {
+        grid-area: subtitle;
+        font-size: 56px;
+        line-height: 40px;
+        display:flex;
+        flex-direction: row;
+        /** Rotation */
+        writing-mode: vertical-lr;
+    }
+    
+    .tagline-archive {
+        grid-area: tagline;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .collection-archive {
+        grid-area: collection;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .archive-container img {
+        grid-area: thumb;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .text-archive {
+        display: none;
+    }
+    
+    .cta-archive {
+        grid-area: cta;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .cta-archive a {
+        display: inline-block;
+        color: #000000;
+        font-size: 16px;
+        line-height: 16px;
+        text-decoration: none;
+    }
+
     /** @ Tops Section **/
+
+    .collection-tops {
+        padding: 80px 0px 80px 0px;
+    }
 
     .tops-cards {
         row-gap: 32px;
@@ -791,127 +923,5 @@ input[type=submit] {
         width: 50%;
         padding-top: 12%;
         border-top: 1px solid #000;
-    }
-
-    /** @ Header BG Blured **/
-
-    .menu-bg {
-        backdrop-filter: blur(0.625rem);
-        -webkit-backdrop-filter: blur(8px);
-    }
-
-    /** @ Main Header **/
-
-    .header-index {
-        display:none;
-    }
-
-    /** @ Herospace **/
-
-    .herospace-index {
-        height: calc(100vh - 8px);;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 50%;
-        gap: 8px;
-    }
-    
-    /** @ Archive Section **/
-
-    .archive-container {
-        height: 100vh;
-        background-color: #ECE870;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        gap: 16px;
-        padding: 16px 16px;
-        grid-template-areas:
-            "title title title title title title title title . brand brand brand"
-            "title title title title title title title title . brand brand brand"
-            ". . . . . . . . . . . ."
-            ". . season season . . version version version version . ."
-            "subtitle subtitle . . tagline tagline collection collection collection collection . ."
-            "subtitle subtitle . . . . thumb thumb thumb thumb . ."
-            "subtitle subtitle . . . . thumb thumb thumb thumb . ."
-            "subtitle subtitle . . . . thumb thumb thumb thumb . ."
-            "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
-            "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
-            "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
-            "subtitle subtitle . . . . . . . . . ."
-        ;
-    }
-    
-    .title-archive {
-        grid-area: title;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-    
-    .brand-archive {
-        grid-area: brand;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    
-    .season-archive {
-        grid-area: season;
-    }
-    
-    .version-archive {
-        grid-area: version;
-        line-height: 72px;
-    }
-    
-    .subtitle-archive {
-        grid-area: subtitle;
-        line-height: 72px;
-        display:flex;
-        flex-direction: row;
-        /** Rotation */
-        writing-mode: vertical-lr;
-    }
-    
-    .tagline-archive {
-        grid-area: tagline;
-    }
-    
-    .collection-archive {
-        grid-area: collection;
-    }
-    
-    .archive-container img {
-        grid-area: thumb;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 4px;
-    }
-    
-    .text-archive {
-        grid-area: btxt;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-    
-    .cta-archive {
-        grid-area: cta;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-    
-    .cta-archive a {
-        display: inline-block;
-        color: #000000;
-        text-decoration: none;
     }
 }
