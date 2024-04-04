@@ -931,7 +931,7 @@ input[type=submit] {
         height: 700px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        padding: 24px 16px 30% 16px;
+        padding: 24px 16px 60px 16px;
         grid-template-areas:
             "ten ten aphn aphn"
             "menu1 menu1 aphn aphn"
@@ -988,9 +988,6 @@ input[type=submit] {
     .newsletter-f {
         grid-area: nslr;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         justify-content: flex-end;
     }
 
@@ -1000,6 +997,7 @@ input[type=submit] {
     }
 
     .newsletter-f div {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1013,32 +1011,24 @@ input[type=submit] {
     }
 
     input[type=submit] {
-        color: #000;
         font-size: 20;
         line-height: 24px;
+        color: #000;
         background-color: #ffffff;
         border: 0px solid #ffffff;
     }
 
     ::placeholder {
-        color: #A1A1A1;
-        border-style: none;
         font-size: 20px;
         line-height: 24px;
-    }
-
-    :focus {
-        border: 0px solid #ffffff;
-        border-radius: 0px;
     }
 
     .copyright {
         grid-area: copyr;
-        display: flex;
-        flex-direction: row;
+        justify-content: flex-start;
         align-items: flex-end;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 16px;
     }
 
     .privacy {
@@ -1050,8 +1040,6 @@ input[type=submit] {
     }
 
     .privacy a {
-        color: #000000;
-        text-decoration: none;
         font-size: 16px;
         line-height: 16px,  
     }
