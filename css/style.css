@@ -981,7 +981,7 @@ input[type=submit] {
     }
 
     .menu-f li a {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
     }
 
@@ -992,7 +992,7 @@ input[type=submit] {
     }
 
     .newsletter-f p {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
     }
 
@@ -1004,22 +1004,17 @@ input[type=submit] {
     }
 
     input[type=text] {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
-        color: #000;
-        border: 0px solid #ffffff;
     }
 
     input[type=submit] {
-        font-size: 20;
+        font-size: 16;
         line-height: 24px;
-        color: #000;
-        background-color: #ffffff;
-        border: 0px solid #ffffff;
     }
 
     ::placeholder {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
     }
 
@@ -1027,7 +1022,7 @@ input[type=submit] {
         grid-area: copyr;
         justify-content: flex-start;
         align-items: flex-end;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 16px;
     }
 
