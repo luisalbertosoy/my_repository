@@ -41,6 +41,10 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+::selection {
+    background-color: #1D79FF;
+}
+
 /** Font System **/
 
 .font-188 {
@@ -156,8 +160,9 @@ body {
 .header-index a {
     text-decoration: none;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     color: black;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-container {
@@ -173,12 +178,22 @@ body {
     gap: 16px;
 }
 
+.navbar li {
+    padding: 0px 0px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar li:hover {
+    border-bottom: 2px solid #000000;
+}
+
 .navbar li a {
     text-decoration: none;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     color: black;
 }
+
 
 .header-bag {
     display: flex;
@@ -188,7 +203,7 @@ body {
 .header-bag a {
     text-decoration: none;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     color: black;
 }
 
@@ -231,6 +246,10 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     text-decoration: none;
+}
+
+.sub-container ul li a:hover {
+    color: #ECE870;
 }
 
 .submenu-active {
@@ -639,11 +658,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 16px;
 }
 
 input[type=text] {
+    width: 100%;
     color: #000;
-    border: 0px solid #ffffff;
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 2px solid #c8c8c8;
 }
 
 input[type=submit] {
@@ -651,7 +677,8 @@ input[type=submit] {
     font-size: .875rem;
     line-height: 1rem;
     background-color: #ffffff;
-    border: 0px solid #ffffff;
+    border: none;
+    border-bottom: 2px solid transparent;
 }
 
 ::placeholder {
@@ -799,7 +826,7 @@ input[type=submit] {
     /** @ Archive Section **/
 
     .archive-container {
-        height: 96vh;
+        height: 112vh;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(7, 1fr);
         padding: 0px 16px 16px 16px;
@@ -1011,6 +1038,7 @@ input[type=submit] {
     input[type=submit] {
         font-size: 1rem;
         line-height: 1.5rem;
+        font-weight: 400;
     }
 
     ::placeholder {
