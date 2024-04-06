@@ -150,7 +150,6 @@ body {
     flex-direction: row;
     width: 100%;
     height: 64px;
-    justify-content: space-between;
     padding: 0px 16px;
     align-items: center;
     position: fixed;
@@ -165,13 +164,21 @@ body {
     border-bottom: 2px solid transparent;
 }
 
-#menu-toggle {
-    cursor: pointer;
+.menu-button {
+    line-height: 1.5rem;
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .nav-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 32px;
 }
 
@@ -197,19 +204,18 @@ body {
     color: black;
 }
 
+.sn-menu-768 {
+    display: none;
+}
 
 .header-bag {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
-.header-bag-768 {
-    display: none;
-    flex-direction: row;
-}
-
-.header-bag, .header-bag-768 a {
+.header-bag a {
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -803,25 +809,53 @@ input[type=submit] {
         display:none;
     }
     **/
-    
+
+    .header-index {
+        height: 64px;
+        padding: 0px 0px;
+        z-index: 150;
+    }
+
     .nav-container {
         height: 100%;
         flex-wrap: wrap;
         position: relative;
+        padding: 0px 16px;
     }
 
-    #menu-toggle {
-        display: none;
+    .menu-toggle:checked + .navbar {
+        height: calc(100vh -4rem);
     }
 
     .navbar {
         width: 100%;
         background-color: #1D79FF;
+        height: 0;
+        overflow: hidden;
+        /**height: calc(100vh - 64px);**/
         position: absolute;
         top: 64px;
-        height: calc(100vh-64px);
+        left: 0;
+        padding: 0px 16px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #ffffff1a;    
+        backdrop-filter: blur(0.625rem);
+    }
+
+    .menu-button {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navbar li a {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        color: #000000;
+    }
+
+    .sn-menu-768 {
         display: flex;
-        justify-content: center;
     }
 
     /** @ Herospace **/
@@ -900,8 +934,8 @@ input[type=submit] {
         line-height: 2.5rem;
     }
     
-    .subtitle-archive {git
-        grid-area: subtitle;
+    .subtitle-archive {
+
         font-size: 3.5rem;
         line-height: 2.5rem;
         display:flex;
