@@ -14,14 +14,18 @@
 
 .header-index a {
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     color: black;
-    border-bottom: 2px solid transparent;
 }
 
 .menu-button {
     line-height: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: black;
 }
 
 .menu-toggle {
@@ -30,25 +34,27 @@
 
 .navbar {
     width: 100%;
+    height: 64px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .n1 {
-    order: 2;
+    order: 1;
 }
 .n2 {
-    order: 3;
+    order: 2;
 }
 .n3 {
-    order: 4;
+    order: 3;
 }
 
 .n4 {
-    order: 1;
+    order: 4;
 }
 
 ol, ul {
@@ -56,10 +62,23 @@ ol, ul {
 }
 
 .ul-links {
+    width: 100%;
+    height: calc(100vh - 4rem);
     background-color: #1D79FF;
-
+    position: absolute;
+    top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.ul-links a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: black;
+}
 
 /**
 
