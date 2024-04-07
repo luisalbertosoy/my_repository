@@ -856,9 +856,7 @@ input[type=submit] {
         overflow: hidden;
         /**height: calc(100vh - 4rem);**/
         /**background-color: #1D79FF;**/
-        /**background-color: #ffffff5d;**/
-        backdrop-filter: blur(0.625rem);
-        -webkit-backdrop-filter: blur(8px);
+        background-color: #000000;
         position: absolute;
         top: 64px;
         left: 0px;
@@ -873,6 +871,7 @@ input[type=submit] {
     .navbar li a {
         font-size: 2.5rem;
         line-height: 2.5rem;
+        color: #ffffff;
     }
 
     /** @ Herospace **/
