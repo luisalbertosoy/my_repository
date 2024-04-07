@@ -823,7 +823,7 @@ input[type=submit] {
         padding: 0px 16px;
     }
 
-    .menu-toggle:checked + .navbar {
+    .menu-toggle:checked ~ .navbar {
         height: calc(100vh -4rem);
     }
 
