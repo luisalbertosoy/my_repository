@@ -10,9 +10,9 @@
     <body>
         <header class="header-index">      
             <nav class="nav-container">
-                <a href="" class="n1">( A P H N ) ®</a>
+                <!--<a href="" class="n1">( A P H N ) ®</a>-->
                 <input class="menu-toggle" type="checkbox" id="menu-toggle">
-                <label class="menu-button n2" for="menu-toggle">MENU</label>
+                <label class="menu-button n2 push-right" for="menu-toggle">MENU</label>
                 <ul class="navbar n3 push-right">
                     <li class="li-link"><a href="">READY TO WEAR</a></li>
                     <li class="li-link"><a href="">SALE</a></li>
@@ -36,12 +36,19 @@
         
         <!-- Menu Blured BG -->
 
-        <div class="menu-bg"></div>
+        <div class="menu-bg">
+            <nav class="nav-container">
+                <a href="" class="n1">( A P H N ) ®</a>
+            </nav>
+        </div>
 
         <!-- Menu Blured BG -->
 
         <main class="main-container">
             <section class="herospace-product">
+                <div class="aphn-icon">
+                    <a href="../index.html"><img src="../assets/img/aphn_icon.svg" alt="APHN ICON"></a>
+                </div>
                 <div class="tech-info">
                     <div>
                         <p class="font-12 clr-midgray">NON ACTIVE WEAR</p>
@@ -54,17 +61,24 @@
                 </div>
                 <div class="add-module">
                     <div>
-                        <p>$240 USD</p>
-                        <p>Taxes and duties included.</p>
+                        <p class="font-20">$240 USD</p>
+                        <p class="font-14 clr-midgray">Taxes and duties included.</p>
                     </div>
-                    <div>
-                        <select class="size" name="size" id="size-btn">SIZE</select>
+                    <div class="select-container">
+                        <select class="size" name="size" id="size-btn">
+                            <option value="">SIZE</option>
+                            <option value="ss">S</option>
+                            <option value="sm">M</option>
+                            <option value="sl">L</option>
+                            <option value="sxl">XL</option>
+                            <option value="sxxl">XXL</option>
+                        </select>
                         <button class="wish">WISHLIST</button>
                         <button class="add">ADD TO BAG</button>
                     </div>
                     <div>
                         <p class="size-guide">Model is 6ft 1" and wears size M <a href="">SIZE GUIDE</a></p>
-                        <p class="shipping-info">Mexico : Free shipping on orders over $500 USD.</p>
+                        <p class="shipping-info font-14 clr-midgray">Mexico : Free shipping on orders over $500 USD.</p>
                     </div>
                 </div>
                 <div class="sp-gallery">

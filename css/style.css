@@ -71,6 +71,11 @@ h1 {
     line-height: 2rem;
 }
 
+.font-24 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
 .font-20 {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -277,6 +282,8 @@ h1 {
 /** Header BG Blured **/
 
 .menu-bg {
+    display:flex;
+    flex-direction: row;
     width: 100%;
     height: 64px;
     background-color: #ffffff5d;
@@ -284,6 +291,14 @@ h1 {
     position: fixed;
     top: 0;
     z-index: 2;
+}
+
+.menu-bg a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: black;
+    border-bottom: 2px solid transparent;
 }
 
 /** Herospace **/
@@ -301,9 +316,17 @@ h1 {
     color: white;
     padding-left: 10%;
     padding-bottom: 10%;
-    position: sticky;
+    position: relative;
     margin-top: 0;
     z-index: 10;
+}
+
+.aphn-icon {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 3;
 }
 
 /** Main **/
@@ -733,7 +756,7 @@ input[type=submit] {
 
 /** 2. **//** SINGLE PRODUCT PAGE **/
 
-/** Herospace **/
+/** Product Section **/
 
 .herospace-product {
     width: 100%;
@@ -787,15 +810,95 @@ input[type=submit] {
 }
 
 .add-module {
+    width: 365px;
     position: absolute;
     right: 16px;
     bottom: 16px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
     z-index: 2;
 }
 
+.add-module div {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-module .select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.size {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: calc(50% - 8px);
+    height: 48px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    display: block;
+    padding: 0px 20px;
+    font-size: 1rem;
+    line-height: 1rem;
+    border: 2px solid #c5c5c5;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.size:focus, .size:hover {
+    border-color: #1D79FF;
+}
+
+.wish {
+    width: calc(50% - 8px);
+    height: 48px;
+    font-size: 1rem;
+    line-height: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish:hover {
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.add {
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+    line-height: 1rem;
+    background-color: #1D79FF;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add:hover {
+    background-color: #ECE870;
+}
+
+.size-guide {
+    padding-bottom: 8px;
+}
+
+.size-guide a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #000000;
+}
 
 /** @media max-width:1280px **/
 
@@ -909,18 +1012,15 @@ input[type=submit] {
         position: relative;
     }
     
-    .n1 {
+    .n2 {
         order: 2;
     }
-    .n2 {
-        order: 1;
-    }
     .n3 {
-        order: 3;
+        order: 1;
     }
     
     .n4 {
-        order: 4;
+        order: 3;
     }
     
     ol, ul {
