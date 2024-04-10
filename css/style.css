@@ -1359,6 +1359,10 @@ input[type=submit] {
         line-height: 1rem,  
     }
 
+    .footer-index, .f-msp {
+        padding-bottom: 32px;
+    }
+
     /** 2. **//** @ SINGLE PRODUCT PAGE **/
 
     /** @ Product Section **/
@@ -1415,6 +1419,8 @@ input[type=submit] {
 
     .add-module {
         width: calc(100% - 32px);
+        position: fixed;
+        bottom: 16px;
     }
 
     .wish {
