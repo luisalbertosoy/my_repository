@@ -1099,15 +1099,12 @@ input[type=submit] {
         display:none;
     }
     **/
-
+    
     .header-index {
         width: 100%;
-        height: 64px;
-        align-items: center;
-        position: fixed;
-        top: 0;
+        justify-content: flex-end;
     }
-    
+
     .menu-button {
         display: block;
         line-height: 1.5rem;
@@ -1126,17 +1123,10 @@ input[type=submit] {
     }
     
     .nav-container {
-        width: 100%;
-        height: 64px;
-        padding: 0px 16px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         flex-wrap: wrap;
         position: relative;
     }
-    
+
     .n2 {
         order: 2;
     }
@@ -1209,7 +1199,7 @@ input[type=submit] {
     /** @ Archive Section **/
 
     .archive-container {
-        height: 112vh;
+        height: 720px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(7, 1fr);
         padding: 0px 16px 16px 16px;
