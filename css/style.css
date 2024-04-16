@@ -1022,6 +1022,160 @@ input[type=submit] {
     outline: 4px solid #ECE870;
 }
 
+/** 3. **//** STORE PAGE END **/
+
+
+/** 4. **//** ABOUT PAGE START**/
+
+
+/** Main Section **/
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 136px 0px 136px 0px;
+    gap: 120px;
+}
+
+.about h1 {
+    line-height: 11.5rem;
+    padding: 0px 16px;
+}
+
+.about div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+}
+
+.about div img {
+    width: 40%;
+}
+
+.a-text {
+    width: calc(60% - 8px);
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+.a-img {
+    width: calc(40% - 8px);
+}
+
+.a-quote {
+    text-align: center;
+}
+
+/** 4. **//** ABOUT PAGE END **/
+
+
+/** 5. **//** JOURNAL PAGE START**/
+
+
+/** Main Section **/
+
+.journal-container {
+    width: 100%;
+    height: 1328px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 16px;
+    padding: 136px 16px;
+    grid-template-areas:
+        "title title title title title title title title . brand brand brand"
+        "title title title title title title title title . brand brand brand"
+        ". . . . . . . . . . . ."
+        ". . season season . . version version version version . ."
+        "subtitle subtitle . . tagline tagline collection collection collection collection . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle btxt btxt btxt btxt thumb thumb thumb thumb . ."
+        "subtitle subtitle cta cta cta cta thumb thumb thumb thumb . ."
+        "subtitle subtitle . . . . . . . . . ."
+    ;
+}
+
+.title-journal {
+    grid-area: title;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.brand-journal {
+    grid-area: brand;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.season-journal {
+    grid-area: season;
+}
+
+.version-journal {
+    grid-area: version;
+    line-height: 4.5rem;
+}
+
+.subtitle-journal {
+    grid-area: subtitle;
+    line-height: 4.5rem;
+    display:flex;
+    flex-direction: row;
+    /** Rotation */
+    writing-mode: vertical-lr;
+}
+
+.tagline-journal {
+    grid-area: tagline;
+}
+
+.collection-journal {
+    grid-area: collection;
+}
+
+.journal-container img {
+    grid-area: thumb;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.text-journal {
+    grid-area: btxt;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.cta-journal {
+    grid-area: cta;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.cta-journal a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+}
 
 /** @ MEDIA CSS START @ **/
 
@@ -1555,5 +1709,152 @@ input[type=submit] {
 
     .pl-card {
         width: calc(50% - 8px);
+    }
+
+    /** 4. **//** @ ABOUT PAGE START**/
+
+    /** @ Main Section **/
+
+    .about {
+        margin: 84px 0px 84px 0px;
+        gap: 64px;
+    }
+
+    .about h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .about div {
+        flex-wrap: wrap;
+    }
+
+    .about div img {
+        width: 100%;
+    }
+
+    .a-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .a-img {
+        width: 100%;
+    }
+
+    .a-quote {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    /** 5. **//** @ JOURNAL PAGE START**/
+
+    /** @ Main Section **/
+
+    .journal-container {
+        height: 760px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        padding: 0px 16px 16px 16px;
+        margin: 80px 0px;
+        grid-template-areas:
+            "title title title title"
+            ". season brand brand"
+            "tagline tagline version version"
+            ". . collection collection"
+            "subtitle . thumb thumb"
+            "subtitle . thumb thumb"
+            "cta cta thumb thumb"
+        ;
+    }
+
+    .brand-journal {
+        grid-area: brand;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    
+    .season-journal {
+        grid-area: season;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    
+    .version-journal {
+        grid-area: version;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 3.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .subtitle-journal {
+
+        font-size: 3.5rem;
+        line-height: 2.5rem;
+        display:flex;
+        flex-direction: row;
+        /** Rotation */
+        writing-mode: vertical-lr;
+    }
+    
+    .tagline-journal {
+        grid-area: tagline;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    
+    .collection-journal {
+        grid-area: collection;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    
+    .journal-container img {
+        grid-area: thumb;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .text-journal {
+        display: none;
+    }
+    
+    .cta-journal {
+        grid-area: cta;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .cta-journal a {
+        display: inline-block;
+        color: #000000;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-decoration: none;
     }
 }
