@@ -1087,7 +1087,8 @@ input[type=submit] {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     gap: 16px;
-    padding: 136px 16px;
+    padding: 0px 16px;
+    margin: 96px 0px;
     grid-template-areas:
         "title title title title title title title title . brand brand brand"
         "title title title title title title title title . brand brand brand"
